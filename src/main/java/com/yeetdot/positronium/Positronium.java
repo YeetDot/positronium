@@ -11,9 +11,9 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(Positronium.MODID)
+@Mod(Positronium.MOD_ID)
 public class Positronium {
-    public static final String MODID = "positronium";
+    public static final String MOD_ID = "positronium";
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public Positronium() {
@@ -29,7 +29,7 @@ public class Positronium {
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-    @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
+    @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
