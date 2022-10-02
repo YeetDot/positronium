@@ -1,0 +1,27 @@
+modLoader="javafml"
+loaderVersion="[43,)"
+license="All rights reserved"
+[[mods]]
+modId="positronium"
+version="0.0.1-1.19.2"
+displayName="Positronium"
+logoFile="examplemod.png"
+credits="I was bored and positronium sounds cool"
+authors="YeetDot"
+description='''
+This mod is all based around positronium.
+
+I had no idea it actually existed, I just randomly chose a name.
+'''
+[[dependencies.positronium]]
+modId="forge"
+mandatory=true
+versionRange="[43,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.positronium]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.19.2,1.20)"
+ordering="NONE"
+side="BOTH"
