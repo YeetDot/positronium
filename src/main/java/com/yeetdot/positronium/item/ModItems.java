@@ -14,6 +14,12 @@ public class ModItems {
     public static final RegistryObject<Item> POSITRONIUM = ITEMS.register("positronium",
             () -> new Item(new Item.Properties().tab(Positronium.POSITRONIUM_TAB)));
 
+    public static final RegistryObject<Item> ELECTRON = ITEMS.register("electron",
+            () -> new Item(new Item.Properties().tab(Positronium.POSITRONIUM_TAB)));
+
+    public static final RegistryObject<Item> POSITRON = ITEMS.register("positron",
+            () -> new Item(new Item.Properties().tab(Positronium.POSITRONIUM_TAB)));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
