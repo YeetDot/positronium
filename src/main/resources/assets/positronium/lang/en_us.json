@@ -4,6 +4,10 @@
   "item.positronium.electron": "Electron",
 
   "block.positronium.electron_block": "Block of Electron",
+  "block.positronium.positron_block": "Block of Positron",
+  "block.positronium.electrified_stone": "Electrified Stone",
+  "block.positronium.electrified_deepslate": "Electrified Deepslate",
+  "block.positronium.greater_lootcrate": "Greater Lootcrate",
 
 
   "itemGroup.positroniumtab": "Positronium"

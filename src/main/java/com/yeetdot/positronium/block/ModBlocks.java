@@ -31,6 +31,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> ELECTRIFIED_DEEPSLATE = registerBlock("electrified_deepslate",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(3.5f).requiresCorrectToolForDrops()), Positronium.POSITRONIUM_TAB);
 
+    public static final RegistryObject<Block> GREATER_LOOTCRATE = registerBlock("greater_lootcrate",
+            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(2f)), Positronium.POSITRONIUM_TAB);
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn, tab);
