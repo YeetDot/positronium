@@ -25,6 +25,12 @@ public class ModBlocks {
     public static final RegistryObject<Block> POSITRON_BLOCK = registerBlock("positron_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.AIR).instabreak()), Positronium.POSITRONIUM_TAB);
 
+    public static final RegistryObject<Block> ELECTRIFIED_STONE = registerBlock("electrified_stone",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2f).requiresCorrectToolForDrops()), Positronium.POSITRONIUM_TAB);
+
+    public static final RegistryObject<Block> ELECTRIFIED_DEEPSLATE = registerBlock("electrified_deepslate",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(3.5f).requiresCorrectToolForDrops()), Positronium.POSITRONIUM_TAB);
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn, tab);
