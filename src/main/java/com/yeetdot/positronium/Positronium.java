@@ -1,6 +1,7 @@
 package com.yeetdot.positronium;
 
 import com.mojang.logging.LogUtils;
+import com.yeetdot.positronium.block.ModBlocks;
 import com.yeetdot.positronium.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
@@ -23,6 +24,7 @@ public class Positronium {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
