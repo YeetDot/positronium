@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "positronium:electron_block"
+    }
+  ],
+  "result": {
+    "item": "positronium:electron",
+    "count": 9
+  }
+}
