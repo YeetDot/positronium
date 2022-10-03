@@ -1,4 +1,6 @@
 {
   "item.positronium.positronium": "Positronium",
+  "item.positronium.positron": "Positron",
+  "item.positronium.electron": "Electron",
   "itemGroup.positroniumtab": "Positronium"
 }
