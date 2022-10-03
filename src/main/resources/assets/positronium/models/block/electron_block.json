@@ -1,6 +1,3 @@
 {
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "positronium:block/electron_block"
-  }
+  "parent": "positronium:block/electron_block"
 }

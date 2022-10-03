@@ -2,5 +2,9 @@
   "item.positronium.positronium": "Positronium",
   "item.positronium.positron": "Positron",
   "item.positronium.electron": "Electron",
+
+  "block.positronium.electron_block": "Block of Electron",
+
+
   "itemGroup.positroniumtab": "Positronium"
 }
