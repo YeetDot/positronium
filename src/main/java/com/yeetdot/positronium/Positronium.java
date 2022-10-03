@@ -1,6 +1,9 @@
 package com.yeetdot.positronium;
 
 import com.mojang.logging.LogUtils;
+import com.yeetdot.positronium.item.ModItems;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -19,10 +22,19 @@ public class Positronium {
     public Positronium() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModItems.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
     }
+
+    public static final CreativeModeTab POSITRONIUM_TAB = new CreativeModeTab("positroniumtab") {
+        @Override
+        public ItemStack makeIcon() {
+            return new ItemStack(ModItems.POSITRONIUM.get());
+        }
+    };
 
     private void commonSetup(final FMLCommonSetupEvent event) {
 
