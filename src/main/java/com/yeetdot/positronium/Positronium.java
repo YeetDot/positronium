@@ -3,6 +3,7 @@ package com.yeetdot.positronium;
 import com.mojang.logging.LogUtils;
 import com.yeetdot.positronium.block.ModBlocks;
 import com.yeetdot.positronium.item.ModItems;
+import com.yeetdot.positronium.sound.ModSounds;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
@@ -25,6 +26,8 @@ public class Positronium {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModSounds.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

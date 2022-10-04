@@ -1,6 +1,7 @@
 package com.yeetdot.positronium.item;
 
 import com.yeetdot.positronium.Positronium;
+import com.yeetdot.positronium.item.custom.ElectronCollectorItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -19,6 +20,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> POSITRON = ITEMS.register("positron",
             () -> new Item(new Item.Properties().tab(Positronium.POSITRONIUM_TAB)));
+
+    public static final RegistryObject<Item> ELECTRON_COLLECTOR = ITEMS.register("electron_collector",
+            () -> new ElectronCollectorItem(new Item.Properties().tab(Positronium.POSITRONIUM_TAB)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

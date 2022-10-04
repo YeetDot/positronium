@@ -2,12 +2,15 @@
   "item.positronium.positronium": "Positronium",
   "item.positronium.positron": "Positron",
   "item.positronium.electron": "Electron",
+  "item.positronium.electron_collector": "Electron Collector",
 
-  "block.positronium.electron_block": "Block of Electron",
-  "block.positronium.positron_block": "Block of Positron",
+  "block.positronium.electron_block": "Condensed Electron",
+  "block.positronium.positron_block": "Condensed Positron",
   "block.positronium.electrified_stone": "Electrified Stone",
   "block.positronium.electrified_deepslate": "Electrified Deepslate",
   "block.positronium.greater_lootcrate": "Greater Lootcrate",
+
+  "sound.positronium.electron_obtained": "Obtained Electron",
 
 
   "itemGroup.positroniumtab": "Positronium"
