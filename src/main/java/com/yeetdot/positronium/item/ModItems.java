@@ -23,7 +23,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(Positronium.POSITRONIUM_TAB)));
 
     public static final RegistryObject<Item> ELECTRON_COLLECTOR = ITEMS.register("electron_collector",
-            () -> new ElectronCollectorItem(new Item.Properties().tab(Positronium.POSITRONIUM_TAB).rarity(Rarity.EPIC)));
+            () -> new ElectronCollectorItem(new Item.Properties().tab(Positronium.POSITRONIUM_TAB).rarity(Rarity.EPIC).stacksTo(1)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

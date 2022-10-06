@@ -5,6 +5,7 @@ import com.yeetdot.positronium.sound.ModSounds;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
@@ -29,8 +30,9 @@ public class ElectronCollectorItem extends Item {
         if (!level.isClientSide()) {
             player.causeFoodExhaustion(0.1f);
             player.addItem(new ItemStack(ModItems.ELECTRON.get()));
-            level.playSound(null, player.getOnPos(), SoundEvents.ENDER_PEARL_THROW, SoundSource.PLAYERS, 0.5F, level.random.nextFloat() * 1F + 0.9F);
+            level.playSound(null, player.getOnPos(), SoundEvents.ITEM_PICKUP,SoundSource.PLAYERS, 100f, level.random.nextFloat()*1f + 0.9f);
             player.getCooldowns().addCooldown(this, 20);
+
         }
 
 
