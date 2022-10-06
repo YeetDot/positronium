@@ -29,7 +29,7 @@ public class ElectronCollectorItem extends Item {
         if (!level.isClientSide()) {
             player.causeFoodExhaustion(0.1f);
             player.addItem(new ItemStack(ModItems.ELECTRON.get()));
-            level.playSound(null, player.getOnPos(), SoundEvents.ENDER_PEARL_THROW, SoundSource.PLAYERS, 0.5F, level.random.nextFloat() * 0.1F + 0.9F);
+            level.playSound(null, player.getOnPos(), SoundEvents.ENDER_PEARL_THROW, SoundSource.PLAYERS, 0.5F, level.random.nextFloat() * 1F + 0.9F);
             player.getCooldowns().addCooldown(this, 20);
         }
 
